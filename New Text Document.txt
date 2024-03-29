@@ -1,0 +1,70 @@
+
+//api for school   
+
+ create :http://localhost:3000/api/schools
+ {
+  "school_id": 1,
+  "school_name": "",
+  "school_addr": ""
+}
+
+fetch:http://localhost:3000/api/schools/:schoolId/classes
+
+update:http://localhost:3000/api/schools/:schoolId
+{
+  "school_name": ""
+}
+
+//to see school which are present
+fetch:http://localhost:3000/api/schools
+
+
+//api for class
+create:http://localhost:3000/api/classes/:schoolId
+{
+  "class id": ,
+  "class_name": ""
+}
+
+
+fetch:http://localhost:3000/api/classes/:schoolId/:classId  
+
+update:http://localhost:3000/api/classes/:schoolId/:classId
+{
+  "class_name": ""
+}
+
+
+delete:http://localhost:3000/api/classes/:schoolId/:classId
+
+
+//api for student
+
+create:http://localhost:3000/api/students/:classId
+{
+  "student_name": "",
+  "overall_score": 
+}
+
+
+fetch:http://localhost:3000/api/students/:classId/:studentId
+
+update:http://localhost:3000/api/students/:classId/:studentId
+{
+  "student_name": "",
+  "overall_score": 
+}
+
+
+delete:http://localhost:3000/api/students/:classId/:studentId //by both student id and class classId
+
+
+
+
+
+
+
+
+
+
+delete:http://localhost:3000/api/students/:studentId //only bu studentId
